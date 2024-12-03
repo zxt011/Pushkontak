@@ -58,7 +58,7 @@ const qtext = { key: {fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat
 
 const qdoc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {documentMessage: {title: `Powered By ${namaowner}`, jpegThumbnail: ""}}}
 
-const qloc = {key: {participant: '0@s.whatsapp.net', ...(m.chat ? {remoteJid: `status@broadcast`} : {})}, message: {locationMessage: {name: `𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐁𝐨𝐭 𝐉𝐏𝐌 𝐁𝐲 𝐑𝐞𝐯𝐚𝐧𝐂𝐫𝐚𝐬𝐡🐍`,jpegThumbnail: ""}}}
+const qloc = {key: {participant: '0@s.whatsapp.net', ...(m.chat ? {remoteJid: `status@broadcast`} : {})}, message: {locationMessage: {name: `𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐁𝐨𝐭 𝐉𝐏𝐌 𝐁𝐲 𝐐𝐞𝐧𝐧𝐎𝐟𝐟𝐜`,jpegThumbnail: ""}}}
 
 const qcall = {
 key: {
@@ -83,7 +83,7 @@ remoteJid: `status@broadcast`
 }
 }
 
-const qloc2 = {key: {participant: '0@s.whatsapp.net', ...(m.chat ? {remoteJid: `status@broadcast`} : {})}, message: {locationMessage: {name: `𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐁𝐨𝐭 𝐏𝐮𝐬𝐡𝐤𝐨𝐧𝐭𝐚𝐤 𝐁𝐲 𝐑𝐞𝐯𝐚𝐧𝐂𝐫𝐚𝐬𝐡🐍`,jpegThumbnail: ""}}}
+const qloc2 = {key: {participant: '0@s.whatsapp.net', ...(m.chat ? {remoteJid: `status@broadcast`} : {})}, message: {locationMessage: {name: `𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐁𝐨𝐭 𝐏𝐮𝐬𝐡𝐤𝐨𝐧𝐭𝐚𝐤 𝐁𝐲 𝐐𝐞𝐧𝐧𝐎𝐟𝐟𝐜`,jpegThumbnail: ""}}}
 
 const qkontak = {
 key: {
@@ -95,7 +95,7 @@ remoteJid: `status@broadcast`
 message: {
 'contactMessage': {
 'displayName': `${namaowner}`,
-'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;ttname,;;;\nFN:ttname\nitem1.TEL;waid=6285695693302:+62 813-8985-0142\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
+'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;ttname,;;;\nFN:ttname\nitem1.TEL;waid=6282135574623:+62 821-3557-4623\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
 sendEphemeral: true
 }}
 }
@@ -143,7 +143,7 @@ async function reply(teks) {
                     contextInfo: {
                         externalAdReply: {
                             showAdAttribution: true,
-                            title: `𝐑𝐞𝐯𝐚𝐧𝐂𝐫𝐚𝐬𝐡🐍`,
+                            title: `𝐐𝐞𝐧𝐧𝐎𝐟𝐟𝐜`,
                             body: '',
                             thumbnailUrl: "https://tmpfiles.org/dl/14762909/1729820261707.jpg",
                             sourceUrl: '',
@@ -174,7 +174,7 @@ remoteJid: "status@broadcast"
 "description": null,
 "currencyCode": "IDR",
 "priceAmount1000": "999999999999999",
-"retailerId": `𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 𝗥𝗘𝗩𝗔𝗡 𝘾𝙍𝘼𝙎𝙃`,
+"retailerId": `𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 𝙌𝙚𝙣𝙣𝙊𝙛𝙛𝙘`,
 "productImageCount": 1
 },
 "businessOwnerJid": `0@s.whatsapp.net`
@@ -225,7 +225,7 @@ deviceListMetadata: {},
 deviceListMetadataVersion: 2
 }, interactiveMessage: proto.Message.InteractiveMessage.fromObject({
 body: proto.Message.InteractiveMessage.Body.fromObject({
-text: "*All Transaksi Open ✅*\n\n*𝐑𝐞𝐯𝐚𝐧𝐂𝐫𝐚𝐬𝐡🐍* Menyediakan Produk & Jasa Dibawah Ini 📦"
+text: "*All Transaksi Open ✅*\n\n*𝐐𝐞𝐧𝐧𝐎𝐟𝐟𝐜🐍* Menyediakan Produk & Jasa Dibawah Ini 📦"
 }),
 carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.fromObject({
 cards: anu
@@ -3054,7 +3054,7 @@ Gratis *Script Bot Pushkontak & Jpm* Setiap Pembelian Di Atas Ram 5GB`,
 * Dan Lain² Langsung PM Aja
 
 *Untuk Harga Cuma 5k - 15k, Tergantung Kesulitan Codenya!*`, 
-`\n*List Produk 𝐑𝐞𝐯𝐚𝐧𝐂𝐫𝐚𝐬𝐡🛒*
+`\n*List Produk 𝐐𝐞𝐧𝐧𝐎𝐟𝐟𝐜🛒*
 
 * Nokos Whatsapp (+62) Rp8k
 * Nokos Whatsapp (+84) Rp6,5k
@@ -4799,14 +4799,14 @@ if (!isGroup) return reply("Khusus Grup")
 var ini = pler.indexOf(m.chat)
 pler.splice(ini, 1)
 fs.writeFileSync('./all/database/idgrup.json', JSON.stringify(pler))
-reply(`${command} 𝐒𝐮𝐜𝐜𝐞𝐬𝐬 𝐍𝐨𝐭 𝐀𝐜𝐭𝐢𝐯𝐞 𝐑𝐞𝐯𝐚𝐧𝐂𝐫𝐚𝐬𝐡✅`)
+reply(`${command} 𝐒𝐮𝐜𝐜𝐞𝐬𝐬 𝐍𝐨𝐭 𝐀𝐜𝐭𝐢𝐯𝐞 𝐐𝐞𝐧𝐧𝐎𝐟𝐟𝐜✅`)
 break
 case 'addgc':
 if (!isOwner) return reply('Maaf, command ini hanya untuk pemilik.')
 if (!isGroup) return reply("Khusus Grup")
 pler.push(m.chat)
 fs.writeFileSync('./all/database/idgrup.json', JSON.stringify(pler))
-reply(`${command} 𝐒𝐮𝐜𝐜𝐞𝐬𝐬 𝐀𝐜𝐭𝐢𝐯𝐞 𝐓𝐨 𝐑𝐞𝐬𝐞𝐥𝐥𝐞𝐫 𝐏𝐚𝐧𝐞𝐥  𝐑𝐞𝐯𝐚𝐧𝐂𝐫𝐚𝐬𝐡✅`)
+reply(`${command} 𝐒𝐮𝐜𝐜𝐞𝐬𝐬 𝐀𝐜𝐭𝐢𝐯𝐞 𝐓𝐨 𝐑𝐞𝐬𝐞𝐥𝐥𝐞𝐫 𝐏𝐚𝐧𝐞𝐥  𝐐𝐞𝐧𝐧𝐎𝐟𝐟𝐜✅`)
 default:
 if (budy.startsWith('$')) {
 if (!isOwner) return
