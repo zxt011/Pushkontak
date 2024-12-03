@@ -358,73 +358,8 @@ _*Aku Adalah Bot Whatsapp Push Kontak Buatan QenOffc*_
 ◍ 𝚅𝙴𝚁𝚂𝙸 : *${global.version}*
 ◍ 𝙰𝙻𝙻 𝙾𝙵 𝙼𝚈 𝙺𝙸𝙽𝙶 : *${premium.length < 1 ? "Tidak Ada" : premium.length + " User"}*
 ◍ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝚂𝙲𝚁𝙸𝙿𝚃: 𝚀𝚎𝚗𝚗𝙾𝚏𝚏𝚌`
-let msgii = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-body: proto.Message.InteractiveMessage.Body.create({ 
-text: teksnya
-}), 
-header: proto.Message.InteractiveMessage.Header.fromObject({
-hasMediaAttachment: true,
-documentMessage: {"url": "https://mmg.whatsapp.net/v/t62.7119-24/30129597_829817659174206_6300413901737393729_n.enc?ccb=11-4&oh=01_Q5AaIA5MAdyMQOjp8l42SnRy_8qjz9O8JH8vgPee1nIdko51&oe=66595EB9&_nc_sid=5e03e0&mms3=true",
-"mimetype": "application/pdf",
-"fileSha256": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
-"jpegThumbnail": await resize(fs.readFileSync("./media/menu.jpg"), 400, 400),
-"fileLength": 120000,
-"mediaKey": "SkHeALp42Ch7DGb6nuV6p7hxL+V9yjh9s9t3Ox8a72o=",
-"fileName": `© DAPP HEAVEN 🪽 V6`,
-"directPath": "/v/t62.7119-24/30129597_829817659174206_6300413901737393729_n.enc?ccb=11-4&oh=01_Q5AaIA5MAdyMQOjp8l42SnRy_8qjz9O8JH8vgPee1nIdko51&oe=66595EB9&_nc_sid=5e03e0",
-"contactVcard": true,
-"mediaKeyTimestamp": "1658703206"
-}
-}),
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [{
-"name": "single_select",
-"buttonParamsJson": `{ "title": "List Menu", "sections": [{ "title": "# Pilih List Menu Di Bawah Ini", "rows": [{ "header": "All Command", "title": "List All Command Bot", "description": "© ${namabot2}", "id": ".allmenu" }, 
-{ "header": "Main Menu", "title": "List Main Menu Command", "description": "© ${namabot2}", "id": ".mainmenu" }, 
-{ "header": "Downloader", "title": "List Downloader Command", "description": "© ${namabot2}", "id": ".downloadmenu" }, 
-{ "header": "Converter", "title": "List Converter Command", "description": "© ${namabot2}", "id": ".convertmenu" }, 
-{ "header": "Pterodactyl Panel", "title": "List Pterodactyl Panel Command", "description": "© ${namabot2}", "id": ".panelmenu" }, 
-{ "header": "Domain Menu", "title": "List Domain Menu Command", "description": "© ${namabot2}", "id": ".domainmenu" }, 
-{ "header": "Store Menu", "title": "List Store Menu Command", "description": "© ${namabot2}", "id": ".storemenu" }, 
-{ "header": "Group Menu", "title": "List Group Menu Command", "description": "© ${namabot2}", "id": ".grupmenu" }, 
-{ "header": "Owner Menu", "title": "List Ownerbot Menu Command", "description": "© ${namabot2}", "id": ".ownermenu" }]}, { "title": "# Produk Owner Bot", "rows": [{ "header": "Panel Pterodactyl", "title": "List Harga Pterodactyl Panel", "description": "© ${namabot2}", "id": ".list_panel" }, 
-{  "header": "Nokos WhatsApp", "title": "List Harga Nokos Whatsapp", "description": "© ${namabot2}", "id": ".list_nokos" }, 
-{ "header": "VPS (Virtual Private Server)", "title": "List Harga VPS", "description": "© ${namabot2}", "id": ".list_vps" }, 
-{ "header": "Domain Server", "title": "List Harga Domain", "description": "© ${namabot2}", "id": ".list_domain" }, 
-{  "header": "Script XzPush V6.7", "title": "List Harga XzPush V6.7", "description": "© ${namabot2}", "id": ".list_scbot" }]}, { "title": "# Tools Owner Bot", "rows": [{ "header": "Auto Read", "title": "Pilih Opsi ON/OFF", "description": "© ${namabot2}", "id": ".autoread" }, 
-{ "header": "Auto Read Story", "title": "Pilih Opsi ON/OFF", "description": "© ${namabot2}", "id": ".autoreadsw" }, 
-{ "header": "Main Menu", "title": "List Main Menu Command", "description": "© ${namabot2}", "id": ".mainmenu" }, 
-{ "header": "This Is XzBotz", "title": "This Is Qenn", "description": "© ${namabot2}", "id": ".play avangard" }, 
-{ "header": "Anti Call", "title": "Pilih Opsi ON/OFF", "description": "© ${namabot2}", "id": ".anticall" }]}]}`
-},
-{
-"name": "cta_url",
-"buttonParamsJson": `{\"display_text\":\"XzBotz\",\"id\":\".play avangard\"}`
-}]
-}), 
-contextInfo: {
-isForwarded: true,
-mentionedJid: [m.sender, owner+"@s.whatsapp.net"], 
-forwardedNewsletterMessageInfo: {
-newsletterName: `Powered By ${namaowner2}`,
-newsletterJid: global.idsaluran
-}, externalAdReply: {
-title: `Status : ${isOwner ? "Ownerbot" : isPremium ? "Premium" : "Gratisan"}`,
-thumbnailUrl: ppuser,
-body: `${ucapan()} ${m.pushName}`, 
-sourceUrl: linkyt,
-previewType: "PHOTO"
-}}
-})} 
-}}, {userJid: m.sender, quoted: null}) 
-await Ibzz.relayMessage(msgii.key.remoteJid, msgii.message, { 
-messageId: msgii.key.id 
-})
+Ibzz.sendMessage(m.chat, {text: `${teksmenu}`, contextInfo: {mentionedJid: [m.sender], externalAdReply: {
+thumbnail: fs.readFileSync("./media/menu.jpg"), title: `© ${namabot} - ${version}`, body: `Runtime : ${runtime(process.uptime())}`,  sourceUrl: global.linkyt, previewType: "PHOTO"}}}, {quoted: qchanel})
 }
 break
 case "allmenu": {
@@ -558,8 +493,9 @@ let teksmenu = ` *Haii* @${m.sender.split("@")[0]}!
 ║ ➪ ʟɪsᴛ ᴊᴀᴅɪʙᴏᴛ
 │ ➪ sᴛᴏᴘ ᴊᴀᴅɪʙᴏᴛ
 ╰━━━━━━━━━━━━━━━━━━━
-▬▭「 𝐒𝐂 𝐁𝐘 𝐑𝐄𝐕𝐀𝐍 𝐂𝐑𝐀𝐒𝐇 」▭▬`
-Ibzz.sendOrder(m.chat, teksmenu, await fs.readFileSync('./media/menu.jpg'), "99999999", 10000000, null)
+▬▭「𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 𝙌𝙚𝙣𝙣𝙊𝙛𝙛𝙘」▭▬`
+Ibzz.sendMessage(m.chat, {text: `${teksmenu}`, contextInfo: {mentionedJid: [m.sender], externalAdReply: {
+thumbnail: fs.readFileSync("./media/menu.jpg"), title: `© ${namabot} - ${version}`, body: `Runtime : ${runtime(process.uptime())}`,  sourceUrl: global.linkyt, previewType: "PHOTO"}}}, {quoted: qchanel})
 }
 break
 case "mainmenu": {
@@ -580,35 +516,8 @@ let teksmenu = `*👑 M A I N M E N U*
 │ ➪ ǫᴄ
 │ ➪ ᴍᴇɴғᴇss
 ╰━━━━━━━━━━━━━━━━━━━`
-let msgii = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-body: proto.Message.InteractiveMessage.Body.create({ 
-text: teksmenu
-}), 
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [
-{
-"name": "cta_url",
-"buttonParamsJson": `{\"display_text\":\"Join Grup\",\"url\":\"${global.linkgc}\",\"merchant_url\":\"https://www.google.com\"}`
-}]
-}), 
-contextInfo: {
-isForwarded: true,
-mentionedJid: [m.sender], 
-forwardedNewsletterMessageInfo: {
-newsletterName: `Powered By ${namaowner2}`,
-newsletterJid: global.idsaluran
-}}
-})} 
-}}, {userJid: m.sender, quoted: null}) 
-await Ibzz.relayMessage(msgii.key.remoteJid, msgii.message, { 
-messageId: msgii.key.id 
-})
-}
+reply(teksmenu)
+}  
 break
 case "downloadmenu": {
 let teksmenu = `*🪽 D O W N L O A D E R*
@@ -623,38 +532,8 @@ let teksmenu = `*🪽 D O W N L O A D E R*
 ║ ➪ ʏᴛᴍᴘ3 
 │ ➪ ᴍᴇᴅɪᴀғɪʀᴇ
 ╰━━━━━━━━━━━━━━━━━━━`
-let msgii = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-body: proto.Message.InteractiveMessage.Body.create({ 
-text: teksmenu
-}),
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [
-{
-"name": "cta_url",
-"buttonParamsJson": `{\"display_text\":\"Join Grup\",\"url\":\"${global.linkgc}\",\"merchant_url\":\"https://www.google.com\"}`
-}]
-}), 
-contextInfo: {
-isForwarded: true,
-mentionedJid: [m.sender], 
-businessMessageForwardInfo: {  
-businessOwnerJid: global.owner
-}, 
-forwardedNewsletterMessageInfo: {
-newsletterName: `Powered By ${namaowner2}`,
-newsletterJid: global.idsaluran
-}}
-})} 
-}}, {userJid: m.sender, quoted: null}) 
-await Ibzz.relayMessage(msgii.key.remoteJid, msgii.message, { 
-messageId: msgii.key.id 
-})
-}
+reply(teksmenu)
+}  
 break
 case "produkmenu": case "prd": {
 let teksmenu = `*Haii Kak* @${m.sender.split("@")[0]}!
@@ -714,43 +593,8 @@ let teksmenu = `*🪽 P U S H M E N U*
 ║ ➪ sᴀᴠᴇᴋᴏɴᴛᴀᴋ2   
 │ ➪ ɪᴅɢᴄ
 ╰━━━━━━━━━━━━━━━━━━━`
-let msgii = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-body: proto.Message.InteractiveMessage.Body.create({ 
-text: teksmenu
-}), 
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [{
-"name": "quick_reply", "buttonParamsJson": "{\"display_text\":\"Start Jpm All Grup\",\"title\":\"Start Jpm\",\"id\":\".startjpm\"}" 
-},
-{
-"name": "quick_reply", "buttonParamsJson": "{\"display_text\":\"Start Jpm Slide All Grup\",\"title\":\"Start Jpm Slide\",\"id\":\".startjpmslide\"}" 
-},
-{
-"name": "cta_url",
-"buttonParamsJson": `{\"display_text\":\"Join Grup\",\"url\":\"${global.linkgc}\",\"merchant_url\":\"https://www.google.com\"}`
-}]
-}), 
-contextInfo: {
-isForwarded: true,
-mentionedJid: [m.sender], 
-businessMessageForwardInfo: {  
-businessOwnerJid: global.owner
-}, 
-forwardedNewsletterMessageInfo: {
-newsletterName: `Powered By ${namaowner2}`,
-newsletterJid: global.idsaluran
-}}
-})} 
-}}, {userJid: m.sender, quoted: null}) 
-await Ibzz.relayMessage(msgii.key.remoteJid, msgii.message, { 
-messageId: msgii.key.id 
-})
-}
+reply(teksmenu)
+}  
 break
 case "jpmmenu": {
 let teksmenu = `*🪽 J P M M E N U*
@@ -767,43 +611,8 @@ let teksmenu = `*🪽 J P M M E N U*
 │ ➪ sᴇᴛᴛᴇᴋsᴊᴘᴍ
 ║ ➪ ᴛᴇᴋsᴊᴘᴍ 
 ╰━━━━━━━━━━━━━━━━━━━`
-let msgii = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-body: proto.Message.InteractiveMessage.Body.create({ 
-text: teksmenu
-}), 
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [{
-"name": "quick_reply", "buttonParamsJson": "{\"display_text\":\"Start Jpm All Grup\",\"title\":\"Start Jpm\",\"id\":\".startjpm\"}" 
-},
-{
-"name": "quick_reply", "buttonParamsJson": "{\"display_text\":\"Start Jpm Slide All Grup\",\"title\":\"Start Jpm Slide\",\"id\":\".startjpmslide\"}" 
-},
-{
-"name": "cta_url",
-"buttonParamsJson": `{\"display_text\":\"Join Grup\",\"url\":\"${global.linkgc}\",\"merchant_url\":\"https://www.google.com\"}`
-}]
-}), 
-contextInfo: {
-isForwarded: true,
-mentionedJid: [m.sender], 
-businessMessageForwardInfo: {  
-businessOwnerJid: global.owner
-}, 
-forwardedNewsletterMessageInfo: {
-newsletterName: `Powered By ${namaowner2}`,
-newsletterJid: global.idsaluran
-}}
-})} 
-}}, {userJid: m.sender, quoted: null}) 
-await Ibzz.relayMessage(msgii.key.remoteJid, msgii.message, { 
-messageId: msgii.key.id 
-})
-}
+reply(teksmenu)
+}  
 break
 case "convertmenu": {
 let teksmenu = `*🪽 C O N V E R T E R*
@@ -815,38 +624,8 @@ let teksmenu = `*🪽 C O N V E R T E R*
 │ ➪ ᴛᴏᴘᴛᴠ
 ║ ➪ ᴛᴛs  
 ╰━━━━━━━━━━━━━━━━━━━`
-let msgii = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-body: proto.Message.InteractiveMessage.Body.create({ 
-text: teksmenu
-}), 
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [
-{
-"name": "cta_url",
-"buttonParamsJson": `{\"display_text\":\"Join Grup\",\"url\":\"${global.linkgc}\",\"merchant_url\":\"https://www.google.com\"}`
-}]
-}), 
-contextInfo: {
-isForwarded: true,
-mentionedJid: [m.sender], 
-businessMessageForwardInfo: {  
-businessOwnerJid: global.owner
-}, 
-forwardedNewsletterMessageInfo: {
-newsletterName: `Powered By ${namaowner2}`,
-newsletterJid: global.idsaluran
-}}
-})} 
-}}, {userJid: m.sender, quoted: null}) 
-await Ibzz.relayMessage(msgii.key.remoteJid, msgii.message, { 
-messageId: msgii.key.id 
-})
-}
+reply(teksmenu)
+}  
 break
 case "panelmenu": {
 let teksmenu = `*🪽 P A N E L M E N U*
@@ -862,46 +641,8 @@ let teksmenu = `*🪽 P A N E L M E N U*
 ║ ➪ ᴅᴇʟᴘᴀɴᴇʟ 
 │ ➪ ᴅᴇʟᴀᴅᴍɪɴ
 ╰━━━━━━━━━━━━━━━━━━━`
-let msgii = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-body: proto.Message.InteractiveMessage.Body.create({ 
-text: teksmenu
-}), 
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [{
-"name": "quick_reply", "buttonParamsJson": "{\"display_text\":\"List Server Panel\",\"title\":\"List Panel\",\"id\":\".listpanel\"}" 
-}, 
-{
-"name": "quick_reply", "buttonParamsJson": "{\"display_text\":\"Buat Server Panel\",\"title\":\"Buat Panel\",\"id\":\".cpanel\"}" 
-}, 
-{
-"name": "quick_reply", "buttonParamsJson": "{\"display_text\":\"Hapus Server Panel\",\"title\":\"Hapus Panel\",\"id\":\".delpanel\"}" 
-}, 
-{
-"name": "cta_url",
-"buttonParamsJson": `{\"display_text\":\"Join Grup\",\"url\":\"${global.linkgc}\",\"merchant_url\":\"https://www.google.com\"}`
-}]
-}), 
-contextInfo: {
-isForwarded: true,
-mentionedJid: [m.sender], 
-businessMessageForwardInfo: {  
-businessOwnerJid: global.owner
-}, 
-forwardedNewsletterMessageInfo: {
-newsletterName: `Powered By ${namaowner2}`,
-newsletterJid: global.idsaluran
-}}
-})} 
-}}, {userJid: m.sender, quoted: null}) 
-await Ibzz.relayMessage(msgii.key.remoteJid, msgii.message, { 
-messageId: msgii.key.id 
-})
-}
+reply(teksmenu)
+}  
 break
 case "domainmenu": {
 let teksmenu = `*🪽 D O M A I N M E N U*
@@ -911,38 +652,8 @@ let teksmenu = `*🪽 D O M A I N M E N U*
 │ ➪ ʟɪsᴛsᴜʙᴅᴏᴍᴀɪɴ
 ║ ➪ ᴅᴇʟsᴜʙᴅᴏᴍᴀɪɴ 
 ╰━━━━━━━━━━━━━━━━━━━`
-let msgii = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-body: proto.Message.InteractiveMessage.Body.create({ 
-text: teksmenu
-}), 
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [
-{
-"name": "cta_url",
-"buttonParamsJson": `{\"display_text\":\"Join Grup\",\"url\":\"${global.linkgc}\",\"merchant_url\":\"https://www.google.com\"}`
-}]
-}), 
-contextInfo: {
-isForwarded: true,
-mentionedJid: [m.sender], 
-businessMessageForwardInfo: {  
-businessOwnerJid: global.owner
-}, 
-forwardedNewsletterMessageInfo: {
-newsletterName: `Powered By ${namaowner2}`,
-newsletterJid: global.idsaluran
-}}
-})} 
-}}, {userJid: m.sender, quoted: null}) 
-await Ibzz.relayMessage(msgii.key.remoteJid, msgii.message, { 
-messageId: msgii.key.id 
-})
-}
+reply(teksmenu)
+}  
 break
 case "grupmenu": {
 let teksmenu = `*🪽 G R O U P M E N U*
@@ -966,43 +677,8 @@ let teksmenu = `*🪽 G R O U P M E N U*
 ║ ➪ ʟᴇᴀᴠᴇɢᴄ
 │ ➪ ʟᴇᴀᴠᴇɢᴄ2
 ╰━━━━━━━━━━━━━━━━━━━`
-let msgii = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-body: proto.Message.InteractiveMessage.Body.create({ 
-text: teksmenu
-}), 
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [{
-"name": "quick_reply", "buttonParamsJson": "{\"display_text\":\"Tutup Grup\",\"title\":\"Close Grup\",\"id\":\".close\"}" 
-}, 
-{
-"name": "quick_reply", "buttonParamsJson": "{\"display_text\":\"Buka Grup\",\"title\":\"Open Grup\",\"id\":\".open\"}" 
-}, 
-{
-"name": "cta_url",
-"buttonParamsJson": `{\"display_text\":\"Join Grup\",\"url\":\"${global.linkgc}\",\"merchant_url\":\"https://www.google.com\"}`
-}]
-}), 
-contextInfo: {
-isForwarded: true,
-mentionedJid: [m.sender], 
-businessMessageForwardInfo: {  
-businessOwnerJid: global.owner
-}, 
-forwardedNewsletterMessageInfo: {
-newsletterName: `Powered By ${namaowner2}`,
-newsletterJid: global.idsaluran
-}}
-})} 
-}}, {userJid: m.sender, quoted: null}) 
-await Ibzz.relayMessage(msgii.key.remoteJid, msgii.message, { 
-messageId: msgii.key.id 
-})
-}
+reply(teksmenu)
+}  
 break
 case "ownermenu": {
 let teksmenu = ` *Haii* @${m.sender.split("@")[0]}!
@@ -1033,53 +709,8 @@ let teksmenu = ` *Haii* @${m.sender.split("@")[0]}!
 ║ ➪ ʟɪsᴛ ᴊᴀᴅɪʙᴏᴛ
 │ ➪ sᴛᴏᴘ ᴊᴀᴅɪʙᴏᴛ
 ╰━━━━━━━━━━━━━━━━━━━`
-let msgii = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
-"messageContextInfo": { 
-"deviceListMetadata": {}, 
-"deviceListMetadataVersion": 2
-}, 
-interactiveMessage: proto.Message.InteractiveMessage.create({
-body: proto.Message.InteractiveMessage.Body.create({ 
-text: teksmenu
-}), 
-header: proto.Message.InteractiveMessage.Header.fromObject({
-hasMediaAttachment: true,
-documentMessage: {"url": "https://mmg.whatsapp.net/v/t62.7119-24/30129597_829817659174206_6300413901737393729_n.enc?ccb=11-4&oh=01_Q5AaIA5MAdyMQOjp8l42SnRy_8qjz9O8JH8vgPee1nIdko51&oe=66595EB9&_nc_sid=5e03e0&mms3=true",
-"mimetype": "image/png",
-"fileSha256": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
-"jpegThumbnail": await resize(fs.readFileSync("./media/menu.jpg"), 400, 400),
-"fileLength": 9999999999,
-"mediaKey": "SkHeALp42Ch7DGb6nuV6p7hxL+V9yjh9s9t3Ox8a72o=",
-"fileName": `© ${namabot} ${global.version}`,
-"directPath": "/v/t62.7119-24/30129597_829817659174206_6300413901737393729_n.enc?ccb=11-4&oh=01_Q5AaIA5MAdyMQOjp8l42SnRy_8qjz9O8JH8vgPee1nIdko51&oe=66595EB9&_nc_sid=5e03e0",
-"contactVcard": true,
-"mediaKeyTimestamp": "1658703206"
-}
-}),
-nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
-buttons: [{
-"name": "quick_reply", "buttonParamsJson": "{\"display_text\":\"Backup Script Bot\",\"title\":\"Backup Script\",\"id\":\".sc\"}"
-},
-{
-"name": "quick_reply", "buttonParamsJson": "{\"display_text\":\"Restarting Bot\",\"title\":\"Restart Bot\",\"id\":\".rst\"}"
-}]
-}), 
-contextInfo: {
-isForwarded: true,
-mentionedJid: [m.sender], 
-businessMessageForwardInfo: {  
-businessOwnerJid: global.owner
-}, 
-forwardedNewsletterMessageInfo: {
-newsletterName: `Powered By ${namaowner2}`,
-newsletterJid: global.idsaluran
-}}
-})}
-}}, {userJid: m.sender, quoted: null}) 
-await Ibzz.relayMessage(msgii.key.remoteJid, msgii.message, { 
-messageId: msgii.key.id 
-})
-}
+reply(teksmenu)
+}  
 break
 case "trxoff": case "modeoff": {
 if (!isOwner) return reply(msg.owner)
