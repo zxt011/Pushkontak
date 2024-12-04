@@ -358,7 +358,20 @@ _*Aku Adalah Bot Whatsapp Push Kontak Buatan QenOffc*_
 ◍ 𝚅𝙴𝚁𝚂𝙸 : *${global.version}*
 ◍ 𝙰𝙻𝙻 𝙾𝙵 𝙼𝚈 𝙺𝙸𝙽𝙶 : *${premium.length < 1 ? "Tidak Ada" : premium.length + " User"}*
 ◍ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝚂𝙲𝚁𝙸𝙿𝚃: 𝚀𝚎𝚗𝚗𝙾𝚏𝚏𝚌`
-Ibzz.sendMessage(m.chat, {text: `${teksmenu}`, contextInfo: {mentionedJid: [m.sender], externalAdReply: {
+╭━━━━━━━━━━━━━━━━━━━
+║▬▭「 𝐌𝐄𝐍𝐔 」▭▬
+│ ➪ allmenu
+│ ➪ mainmenu
+║ ➪ downloadmenu
+│ ➪ convertermenu
+║ ➪ panelmenu
+│ ➪ domainmenu
+║ ➪ pushkontakmenu
+│ ➪ jpmmenu
+║ ➪ groupmenu
+│ ➪ ownermenu
+╰━━━━━━━━━━━━━━━━━━━
+Ibzz.sendMessage(m.chat, {text: `${teksnya}`, contextInfo: {mentionedJid: [m.sender], externalAdReply: {
 thumbnail: fs.readFileSync("./media/menu.jpg"), title: `© ${namabot} - ${version}`, body: `Runtime : ${runtime(process.uptime())}`,  sourceUrl: global.linkyt, previewType: "PHOTO"}}}, {quoted: qchanel})
 }
 break
