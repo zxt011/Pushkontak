@@ -346,7 +346,7 @@ Ibzz.sendMessage(from, {text:`\`\`\`「 BOKEP Link Detected 」\`\`\`\n\n@${m.se
 
 switch (command) {
 case "menu": case "bot": case "assalamualaikum": case "qenn": {
-let teksnya = `*𝙃𝙖𝙞* @${m.sender.split("@")[0]}!
+let teksmenu = `*𝙃𝙖𝙞* @${m.sender.split("@")[0]}!
 
 _*Aku Adalah Bot Whatsapp Push Kontak Buatan QenOffc*_
 
@@ -357,7 +357,7 @@ _*Aku Adalah Bot Whatsapp Push Kontak Buatan QenOffc*_
 ◍ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : *Baileys 𝚅𝟼.𝟽.𝟻*
 ◍ 𝚅𝙴𝚁𝚂𝙸 : *${global.version}*
 ◍ 𝙰𝙻𝙻 𝙾𝙵 𝙼𝚈 𝙺𝙸𝙽𝙶 : *${premium.length < 1 ? "Tidak Ada" : premium.length + " User"}*
-◍ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝚂𝙲𝚁𝙸𝙿𝚃: 𝚀𝚎𝚗𝚗𝙾𝚏𝚏𝚌`
+◍ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝚂𝙲𝚁𝙸𝙿𝚃: 𝚀𝚎𝚗𝚗𝙾𝚏𝚏𝚌
 ╭━━━━━━━━━━━━━━━━━━━
 ║▬▭「 𝐌𝐄𝐍𝐔 」▭▬
 │ ➪ allmenu
@@ -370,8 +370,8 @@ _*Aku Adalah Bot Whatsapp Push Kontak Buatan QenOffc*_
 │ ➪ jpmmenu
 ║ ➪ groupmenu
 │ ➪ ownermenu
-╰━━━━━━━━━━━━━━━━━━━
-Ibzz.sendMessage(m.chat, {text: `${teksnya}`, contextInfo: {mentionedJid: [m.sender], externalAdReply: {
+╰━━━━━━━━━━━━━━━━━━━`
+Ibzz.sendMessage(m.chat, {text: `${teksmenu}`, contextInfo: {mentionedJid: [m.sender], externalAdReply: {
 thumbnail: fs.readFileSync("./media/menu.jpg"), title: `© ${namabot} - ${version}`, body: `Runtime : ${runtime(process.uptime())}`,  sourceUrl: global.linkyt, previewType: "PHOTO"}}}, {quoted: qchanel})
 }
 break
