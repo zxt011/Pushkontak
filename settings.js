@@ -70,7 +70,7 @@ global.tld4 = "panellstore.net";
 global.msg = {
 "error": "ᴇʀʀᴏʀ ᴅɪᴋɪᴛ ɢᴀ ɴɢᴀʀᴜʜ",
 "done": "ᴅᴏɴᴇ ᴄɪᴋ", 
-"wait": "ᴅɪᴘʀᴏsᴇs ᴅᴜʟᴜ ʏɢʏ, ʙᴛᴡ ʙᴜʏ sᴄʀɪᴘᴛ ʀᴇᴠᴀɴ ᴄʀᴀsʜ ɪɴɪ ᴄʜᴀᴛ ᴏᴡɴᴇʀ. . .", 
+"wait": "ᴅɪᴘʀᴏsᴇs ᴅᴜʟᴜ ʏɢʏ, ʙᴛᴡ ʙᴜʏ sᴄʀɪᴘᴛ Qᴇɴɴᴏꜰꜰᴄ ᴄʀᴀsʜ ɪɴɪ ᴄʜᴀᴛ ᴏᴡɴᴇʀ. . .", 
 "group": "*• Group Only* Fitur Ini Hanya Untuk Di Dalam Grup!", 
 "private": "*• Private Chat* Fitur Ini Hanya Untuk Didalam Private Chat!", 
 "admin": "*• Admin Only* Fitur Ini Hanya Untuk Admin Grup!", 
